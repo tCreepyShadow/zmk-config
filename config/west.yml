@@ -17,7 +17,7 @@ manifest:
 #    - name: zmk-config-lotus58-ble
 #      remote: CreepyShadow
 #      revision: main
-    - name: lotus58_ble
+    - name: lotus58-ble-zmk
       remote: amacleod
       revision: main
   self:
