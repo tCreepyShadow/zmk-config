@@ -6,8 +6,6 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/ext_power.h>
 
-#include "zmk-helpers/helper.h"
-
 // Things to try next:
 // - more stuff in the keyboard control layer, like stuff on the right half
 
