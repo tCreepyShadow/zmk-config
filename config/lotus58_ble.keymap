@@ -1,8 +1,4 @@
-/*
- * Copyright (c) 2024 Allister MacLeod
- *
- * SPDX-License-Identifier: MIT
- */
+// SPDX-License-Identifier: MIT
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
@@ -11,12 +7,9 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 #include "zmk-helpers/helper.h"
-#include "key-labels-glam/lily58.h"
-#include "glam-util.dtsi"
 
 // Things to try next:
 // - more stuff in the keyboard control layer, like stuff on the right half
-
 
 #define DEFAULT 0
 #define QWERTY  0
@@ -42,8 +35,6 @@
 
 combos {
   compatible = "zmk,combos";
-
-#include "glam-sym-nav-num-combos.dtsi"
 
 };
 
