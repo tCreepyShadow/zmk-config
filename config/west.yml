@@ -9,18 +9,12 @@ manifest:
     - name: urob
       url-base: https://github.com/urob
     - name: lotus58
-      url-base: https://github.com/amacleod
+      url-base: https://github.com/tCreepyShadow
   projects:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
-    - name: zmk-helpers
-      remote: urob
-      revision: main
-    - name: zmk-auto-layer
-      remote: urob
-      revision: main
-    - name: lotus58-ble-zmk
+    - name: zmk-config-lotus58-ble
       remote: lotus58
       revision: main
   self:
