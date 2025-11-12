@@ -15,12 +15,14 @@ manifest:
 #    - name: zmk-config-lotus58-ble
 #      remote: CreepyShadow
 #      revision: main
-#    - name: lotus58-ble-zmk
-#      remote: CreepyShadow
-#      revision: main
-    - name: lotus58_ble-zmk-config
+    - name: lotus58-ble-zmk
       remote: CreepyShadow
       revision: main
-
+#    - name: lotus58_ble-zmk-config
+#      remote: CreepyShadow
+#      revision: main
+    - name: zmk-helpers
+      remote: urob
+      revision: main
   self:
     path: config
