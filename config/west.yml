@@ -9,6 +9,11 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
+      revision: main
       import: app/west.yml
+    - name: lotus58_ble_firmware
+      url: https://github.com/tCreepyShadow/lotus58_ble_firmware
+      revision: main
+      path: modules/lotus58_ble_firmware
   self:
     path: config

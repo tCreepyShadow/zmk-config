@@ -18,3 +18,6 @@
 #     artifact-name: corne_left_with_studio
 #
 ---
+include:
+  - board: lotus58_ble_left//zmk@1.20
+  - board: lotus58_ble_right//zmk@1.20
