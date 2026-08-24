@@ -1,13 +1,12 @@
 manifest:
   defaults:
-    revision: v0.3
+    revision: main
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
       import: app/west.yml
     - name: lotus58_ble_firmware
       url: https://github.com/tCreepyShadow/lotus58_ble_firmware
