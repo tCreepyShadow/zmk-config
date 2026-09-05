@@ -7,33 +7,63 @@
 #include <dt-bindings/zmk/rgb.h> // Needed for controlling the underglow LEDs.
 #include <dt-bindings/zmk/outputs.h> // Needed to be able to switch between Bluetooth and USB for the output.
 
+/*
+&caps_word {
+    continue-list = <UNDERSCORE MINUS>;
+};
+*/
+
 / {
 	keymap {
 		compatible = "zmk,keymap";
 
-		default-layer {
+		anymak {
+			display-name = "anymak";
+			bindings = <
+				&kp N1  &kp N2     &kp N3 &kp N4    &kp N5  &kp N6                              &kp N7 &kp N8 &kp N9 &kp N0 &kp MINUS  &kp PLUS
+				&kp ESC &kp Q      &kp K  &kp O     &kp U   &kp Y                               &kp V  &kp D  &kp C  &kp L  &kp F      &kp J
+				&mo 1   &kp H      &kp A  &kp E     &kp I   &kp COMMA                           &kp G  &kp T  &kp R  &kp N  &kp S      &mo 1
+				&trans  &kp LSHIFT &kp Z  &kp SQT   &kp DOT &kp X     &kp C_MUTE    &kp C_PP    &kp B  &kp P  &kp M  &kp W  &kp RSHIFT &trans
+				                          &trans    &trans  &trans    &lt 2 SPACE   &lt 2 SPACE &trans &trans &to 4
+			>;
+		};
+
+		symbol {
+			display-name = "symbol";
+			bindings = <
+				&trans  &trans     &trans &trans   &trans   &trans                        &trans   &trans   &trans    &trans    &trans    &trans
+				&trans  &caps_word &trans &trans   &trans   &trans                        &kp BSLH &kp LBKT &kp RBKT  &trans    &kp GRAVE &trans
+				&trans  &trans     &trans &ktrans  &trans   &trans                        &kp FSLH &kp LPAR &kp RPAR  &kp EQUAL &kp MINUS &kp ASTRK
+				&trans  &trans     &trans &kp LBRC &kp RBRC &trans &kp C_MUTE   &kp C_PP  &kp PIPE &kp EXCL &kp QMARK &kp PLUS  &kp UNDER &trans
+				                          &trans   &trans   &trans &kp SPACE    &kp SPACE &trans   &trans   &trans
+			>;
+		};
+
+		navigation {
+			display-name = "nav";
+			bindings = <
+				&kp F1  &kp F2 &kp F3 &kp F4  &kp F5   &kp F6                        &kp F7   &kp F8    &kp F9    &kp F10   &kp F11   &kp F12
+				&trans  &trans &trans &trans  &trans   &trans                        &trans   &kp PG_DN &kp ENTER &kp INS   &kp PG_UP &trans
+				&trans  &trans &trans &ktrans &trans   &trans                        &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &kp BSPC  &trans
+				&trans  &trans &trans &kp TAB &kp RBRC &trans &kp C_MUTE   &kp C_PP  &kp HOME &trans    &kp DEL   &trans    &trans    &trans
+				                      &trans  &trans   &trans &kp SPACE    &kp SPACE &trans   &trans    &trans
+			>;
+		};
+
+
+
+		qwerty {
 			display-name = "QWERTY";
 			bindings = <
 				&kp ESC   &kp N1 &kp N2 &kp N3   &kp N4   &kp N5                        &kp N6 &kp N7   &kp N8    &kp N9  &kp N0   &kp GRAVE
 				&kp TAB   &kp Q  &kp W  &kp E    &kp R    &kp T                         &kp Y  &kp U    &kp I     &kp O   &kp P    &kp MINUS
 				&kp LSHFT &kp A  &kp S  &kp D    &kp F    &kp G                         &kp H  &kp J    &kp K     &kp L   &kp SEMI &kp SQT
 				&kp LCTRL &kp Z  &kp X  &kp C    &kp V    &kp B  &kp C_MUTE   &kp C_PP  &kp N  &kp M    &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-				                        &kp LALT &kp LGUI &mo 2  &kp SPACE    &kp ENTER &mo 3  &kp BSPC &to 1
+				                        &kp LALT &kp LGUI &mo 5  &kp SPACE    &kp ENTER &mo 6  &kp BSPC &to 0
 			>;
 			sensor-bindings = <
 				&inc_dec_kp C_VOL_UP C_VOL_DN
 				&inc_dec_kp C_PREV C_NEXT
-			>;
-		};
-
-		alt-layer {
-			display-name = "anymak";
-			bindings = <
-				&kp N1  &kp N2     &kp N3 &kp N4    &kp N5  &kp N6                           &kp N7 &kp N8 &kp N9 &kp N0 &kp MINUS  &kp PLUS
-				&kp ESC &kp Q      &kp K  &kp O     &kp U   &kp Y                            &kp V  &kp D  &kp C  &kp L  &kp F      &kp J
-				&trans  &kp H      &kp A  &kp E     &kp I   &kp COMMA                        &kp G  &kp T  &kp R  &kp N  &kp S      &trans
-				&trans  &kp LSHIFT &kp Z  &kp GRAVE &kp DOT &kp X     &kp C_MUTE   &kp C_PP  &kp B  &kp P  &kp M  &kp W  &kp RSHIFT &trans
-				                          &trans    &trans  &trans    &kp SPACE    &kp SPACE &trans &trans &to 0
 			>;
 		};
 
