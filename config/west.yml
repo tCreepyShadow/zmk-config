@@ -12,5 +12,8 @@ manifest:
       url: https://github.com/tCreepyShadow/lotus58_ble_firmware
       revision: main
       path: modules/lotus58_ble_firmware
+    - name: zmk-tri-state
+      url: https://github.com/urob/zmk-tri-state
+      revision: main
   self:
     path: config
