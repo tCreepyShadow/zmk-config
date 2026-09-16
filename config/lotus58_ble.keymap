@@ -10,7 +10,7 @@
 #define ENDE	0
 #define SYM	1
 #define NAV	2
-#define LOTUS58	3
+#define Lotus58	3
 #define QWERTY	4
 #define Lower	5
 #define Raise	6
