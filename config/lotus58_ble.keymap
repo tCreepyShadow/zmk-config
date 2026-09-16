@@ -7,7 +7,7 @@
 #include <dt-bindings/zmk/rgb.h> // Needed for controlling the underglow LEDs.
 #include <dt-bindings/zmk/outputs.h> // Needed to be able to switch between Bluetooth and USB for the output.
 
-#define END	0
+#define ENDE	0
 #define SYM	1
 #define NAV	2
 #define QWERTY	3
@@ -426,7 +426,7 @@
 				&kp F1         &kp F2          &kp F3          &kp F4          &kp F5          &kp F6                                      &kp F7          &kp F8          &kp F9          &kp F10         &kp F11  &kp F12
 				&kp GRAVE      &kp EXCL        &kp AT          &kp HASH        &kp DLLR        &kp PRCNT                                   &kp CARET       &kp AMPS        &kp ASTRK       &kp LPAR        &kp RPAR &kp TILDE
 				&trans         &trans          &trans          &trans          &trans          &kp LBKT        &rgb_ug RGB_TOG   &trans    &kp RBKT        &kp UNDER       &kp PLUS        &kp LBRC        &kp RBRC &kp PIPE
-				                                               &to END         &trans          &trans          &trans            &trans    &trans          &trans          &trans
+				                                               &to ENDE         &trans          &trans          &trans            &trans    &trans          &trans          &trans
 			>;
 		};
 
