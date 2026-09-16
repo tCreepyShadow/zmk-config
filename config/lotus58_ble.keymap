@@ -124,7 +124,7 @@
             		tap-ms = <10>;
             		bindings = <&kp LC(LS(LA(V)))>;
         	};
-	}
+	};
 
 	behaviors {
 		sq_dquot: sq_dquot {
